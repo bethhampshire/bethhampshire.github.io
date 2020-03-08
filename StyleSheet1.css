@@ -9,3 +9,21 @@ h1
     color: darkgrey;
     font-family: 'Baskerville Old Face';
 }
+
+.item1{grid-area: leftbar;}
+.item2{grid-area:rightbar;}
+.item3{grid-area:middleone;}
+.item4{grid-area:middletwo;}
+.item5{grid-area:footer;}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'leftbar middleone middleone middleone rightbar' 
+        'leftbar middleone middleone middleone rightbar' 
+        'leftbar middleone middleone middleone rightbar'
+        'footer footer footer footer footer';
+    grid-gap: 10px;
+    padding:10px;
+}
+
