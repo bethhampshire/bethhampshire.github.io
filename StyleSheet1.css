@@ -3,6 +3,7 @@ h1
 {
     color: darkgrey;
     font-family: 'Baskerville Old Face';
+    font-size:20px;
 }
 
 .item1{grid-area: leftbar;}
@@ -14,18 +15,16 @@ h1
 .grid-container {
     display: grid;
     grid-template-areas: 
-        'leftbar middleone middleone middleone rightbar' 
-        'leftbar middletwo middletwo middletwo rightbar' 
+        'leftbar middleone middleone middleone rightbar'  
         'footer footer footer footer footer';
-    grid-gap: 10px;
+    grid-gap: 5px;
     background-color: antiquewhite;
     padding:10px;
 }
 
 .grid-container > div {
-    background-color:royalblue;
+    background-color:black;
     text-align:center;
     padding: 20px 0;
-    font-size:30px;
 }
 
