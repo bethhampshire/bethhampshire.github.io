@@ -5,28 +5,67 @@ h1
     font-family: 'Baskerville Old Face';
 }
 
-.item1{grid-area: leftbar;}
-.item2{grid-area:rightbar;}
-.item3{grid-area:middleone;}
-.item4{grid-area:middletwo;}
-.item5{grid-area:footer;}
-
-.grid-container {
-    display: grid;
-    grid-template-areas: 
-        'leftbar middleone middleone middleone rightbar' 
-        'leftbar middleone middleone middleone rightbar' 
-        'leftbar middleone middleone middleone rightbar'
-        'footer footer footer footer footer';
-    grid-gap: 10px;
-    background-color: antiquewhite;
-    padding:10px;
+* {
+    box-sizing: border-box;
 }
 
-.grid-container > div {
-    background-color:royalblue;
-    text-align:center;
-    padding: 20px 0;
-    font-size:30px;
+
+.col-1 {
+    width: 8.33%;
 }
 
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+[class*="col-"]{
+    float:left;
+    padding:15px;
+    border: 1px solid blue;
+}
+
+.row::after{
+    content:"";
+    clear:both;
+    display:table;
+}
