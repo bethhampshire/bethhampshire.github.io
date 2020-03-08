@@ -15,7 +15,7 @@ h1
     display: grid;
     grid-template-areas: 
         'leftbar middleone middleone middleone rightbar' 
-
+        'leftbar middletwo middletwo middletwo rightbar' 
         'footer footer footer footer footer';
     grid-gap: 10px;
     background-color: antiquewhite;
